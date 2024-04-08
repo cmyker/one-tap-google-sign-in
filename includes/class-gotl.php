@@ -43,6 +43,7 @@ class GOTL {
 			<div id="g_id_onload"
 				data-client_id="<?php echo esc_html( $gotl_options['googleclientid']);?>"
 				data-auto_select="<?php echo ($gotl_options['enable_auto_login'] == "yes") ? "true" : "false"; ?>"
+				data-auto_prompt="<?php echo ($gotl_options['enable_auto_prompt'] == "yes") ? "true" : "false"; ?>"
 				data-login_uri="<?php echo esc_url( home_url().'/?gotl-signin' );?>"
 				data-wpnonce="<?php echo $nonce;?>"
 				data-redirect_uri="<?php echo esc_url( $current_url );?>"
